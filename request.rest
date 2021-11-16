@@ -1,0 +1,36 @@
+GET http://localhost:6969/todos?page=1&order=desc&status=false
+################################
+GET http://localhost:6969/todo/completed
+################################
+GET http://localhost:6969/todo/active
+################################
+POST http://localhost:6969/todo/new
+Content-Type: application/json
+
+{
+    "content" : "hoc tieng lao",
+}
+
+########
+DELETE http://localhost:6969/todo/delete/6177d22a3bf0bdd46f3468b9
+
+########
+
+PUT http://localhost:6969/todo/status/6177c81478ad3716abc8ca0e
+
+########
+
+PUT http://localhost:6969/todo/update/6178efea039673347b7a4226
+Content-Type: application/json
+
+{
+    "content" : "hoc tieng viet",
+}
+########
+GET http://localhost:6969/todo/completed
+
+########
+
+GET http://localhost:6969/todos/?sortBy=dateUp
+
+########
