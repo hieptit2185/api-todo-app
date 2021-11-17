@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const moment = require('moment');
-const port = 6969;
+const port = process.env.PORT || 3000;
 
 const app = express();
 
